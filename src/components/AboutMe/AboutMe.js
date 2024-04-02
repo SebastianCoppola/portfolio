@@ -4,15 +4,18 @@ import { Button, Grid, Typography } from '@mui/material'
 import Stack from './Stack'
 //Assets: 
 import fotoPerfil from '../../assets/commons/foto-perfil.jpg'
-import { SECTION_ID } from '../../helpers/const'
+import { LANG, SECTION_ID } from '../../helpers/const'
 //Translation:
 import { useTranslation } from 'react-i18next'
 //Urls:
-import { URL_GITHUB, URL_ENGLISH_CV } from '../../helpers/url'
+import { URL_GITHUB, URL_ENGLISH_CV, URL_SPANISH_CV} from '../../helpers/url'
+//Context:
+import { useGlobalContext } from '../../context/Context'
 
 const AboutMe = () => {
 
     const { t } = useTranslation()
+    const { lang } = useGlobalContext()
 
     return (
         <Grid container alignItems='center' sx={{marginTop:{xs:'30px', md:''}}}>
@@ -39,7 +42,12 @@ const AboutMe = () => {
                 <Grid container gap={2} style={{marginTop:'30px'}}>
                     <Button
                         variant='contained'
-                        onClick={()=>window.open(URL_ENGLISH_CV, '_blank')}
+                        onClick={()=> 
+                            lang === LANG.EN ? 
+                                window.open(URL_ENGLISH_CV, '_blank')
+                            :
+                                window.open(URL_SPANISH_CV, '_blank')
+                        }
                     >{t("viewCv")}</Button> 
                     <Button
                         variant='contained'
