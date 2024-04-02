@@ -62,7 +62,7 @@ const Marquesina = ({ data, selected, setSelected }) => {
         <Grid container direction='row'>
             <Grid item xs={1} container justifyContent='center' alignItems='center'>
                 <IconButton
-                    onClick={() => handleScroll(marginLeft + 15)}
+                    onClick={() => handleScroll(marginLeft + 50)}
                     disabled={marginLeft === 0}
                 >
                     <ArrowBackIos style={{color: themeProvider.themes[theme].color}}/>
@@ -73,7 +73,6 @@ const Marquesina = ({ data, selected, setSelected }) => {
                     container 
                     gap={2}
                     wrap='nowrap'
-                    
                     sx={{
                         marginLeft: marginLeft,
                         transition: 'margin 0.5s ease-in-out'
@@ -91,7 +90,7 @@ const Marquesina = ({ data, selected, setSelected }) => {
             </Grid>
             <Grid item xs={1} container justifyContent='center' alignItems='center'>
                 <IconButton
-                    onClick={() => handleScroll(marginLeft - 15)}
+                    onClick={() => handleScroll(marginLeft - 50)}
                     disabled={isLastChipVisible}
                 >
                     <ArrowForwardIos style={{color: themeProvider.themes[theme].color}}/>

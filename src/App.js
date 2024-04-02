@@ -29,28 +29,28 @@ function App() {
             <main style={{padding: '70px 30px 70px 30px'}}>
                 <section id={SECTION_ID.ABOUT_ME}>
                     <Grid container justifyContent='center' sx={{height:{xs:'',md:'80vh'}}}>
-                        <Grid xs={12} md={9} container>
+                        <Grid item xs={12} md={9} container>
                             <AboutMe />
                         </Grid>
                     </Grid>
                 </section>
                 <section id={SECTION_ID.EDUCATION}>
                     <Grid container justifyContent='center' sx={{marginTop:'80px', height:{xs:'',md:'80vh'}}}>
-                        <Grid xs={12} md={9}>
+                        <Grid item xs={12} md={9}>
                             <Education />
                         </Grid>
                     </Grid>
                 </section>
                 <section id={SECTION_ID.PROJECTS}>
                     <Grid container justifyContent='center' sx={{marginTop:'80px', height:{xs:'',md:'70vh'}}}>
-                        <Grid xs={12} md={9} container>
+                        <Grid item xs={12} md={9} container>
                             <Projects />
                         </Grid>
                     </Grid>
                 </section>
                 <section id={SECTION_ID.CONTACT_ME}>
                     <Grid container justifyContent='center' sx={{marginTop:'80px'}}>
-                        <Grid xs={12} md={9} container>
+                        <Grid item xs={12} md={9} container>
                             <ContactMe />   
                         </Grid>
                     </Grid>

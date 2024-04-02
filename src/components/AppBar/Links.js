@@ -4,6 +4,7 @@ import { Grid } from '@mui/material'
 import Link from './Link'
 //Utils:
 import { SECTION_ID } from '../../helpers/const'
+//Translation:
 import { useTranslation } from 'react-i18next'
 
 const Links = ({ direction, setOpenMenu }) => {

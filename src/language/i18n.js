@@ -4,6 +4,7 @@ import es from './es.json'
 import en from './en.json'
 
 i18n.use(initReactI18next).init({
+    defaultLanguage: 'en',
     resources:{
         es: {
             translation : es

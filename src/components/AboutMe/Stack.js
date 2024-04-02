@@ -38,8 +38,8 @@ const Stack = () => {
                 </Typography>
             </Grid>
             <Grid container gap={1} alignItems='center' style={{marginTop:'10px'}}>
-                {stack.map(it => (
-                    <Tooltip title={it.title}>
+                {stack.map((it, index) => (
+                    <Tooltip title={it.title} key={index}>
                         <div><it.icon color={setColor()} size={setSize()}/></div>
                     </Tooltip>
                 ))}

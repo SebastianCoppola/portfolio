@@ -26,8 +26,8 @@ const Card = ({ content, disabled }) => {
                         </Typography>
                     </Grid>                
                     <Grid item container gap={1} style={{marginTop:'15px'}}>
-                        {content?.stack?.map(it => (
-                            <Tooltip title={it.title}>
+                        {content?.stack?.map((it, index) => (
+                            <Tooltip title={it.title} key={index}>
                                 <div><it.icon color={'orange'} size={'2em'}/></div>
                             </Tooltip>
                         ))}

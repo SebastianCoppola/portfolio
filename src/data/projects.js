@@ -27,8 +27,8 @@ const projectsData = [
         gitHub: null, 
         title:'Villa Faraz - WebApp',
         description: {
-            en: 'Site for rental of beachfront cabins in Mar de las Pampas, Argentina.',
-            es: 'Sitio web para alquiler de cabañas frente al mar en Mar de las Pampas, Argentina.'
+            en: 'Site for rental of beachfront cabins in Mar de las Pampas, Argentina. Repository is private.',
+            es: 'Sitio web para alquiler de cabañas frente al mar en Mar de las Pampas, Argentina. El repositorio es privado.'
         },
         stack: [stackIcons.react, stackIcons.mui, stackIcons.javascript],
     },
@@ -38,8 +38,8 @@ const projectsData = [
         gitHub: null, 
         title:'Health Insurance - WebApp',
         description: {
-            en: 'Private accident management system for a major insurance company.',
-            es: 'Sistema privado de gestión de accidentes para una importante compañía de seguros.'
+            en: 'Accident management system for a major insurance company. Both site and repo are private.',
+            es: 'Sistema de gestión de accidentes para una importante compañía de seguros. Tanto el sitio como repositorio son privados.'
         },
         stack: [stackIcons.java, stackIcons.spring, stackIcons.react, stackIcons.mui, stackIcons.mysql, stackIcons.typescript],
     },
@@ -56,8 +56,8 @@ const projectsData = [
     },
     { 
         img: porfolioPrint, 
-        url: null, 
-        gitHub: null, 
+        url: 'https://sebacoppola-dev.vercel.app/', 
+        gitHub: 'https://github.com/SebastianCoppola/portfolio', 
         title:'Portfolio - WebApp',
         description: {
             en: 'The current SPA was made for sharing my work with the communitty.',
