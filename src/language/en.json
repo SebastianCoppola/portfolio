@@ -1,0 +1,21 @@
+{
+    "home": "Home",
+    "aboutMe": "About Me",
+    "education": "Education",
+    "projects": "Projects",
+    "contactMe": "Contact Me",
+    "copyright": "© Site developed by Sebastián Coppola. All right reserved. ",
+    "hi": "Hi! I'm",
+    "sebastianCoppola": "SEBASTIAN COPPOLA", 
+    "bio": "I'm a Full Stack developer based in Argentina committed to delivering excellence in every aspect of my work. Specializing in React, Java, and Node.js, I strive to drive innovation and efficiency within the projects I engage in.",
+    "stack": "STACK",
+    "viewCv": "View CV",
+    "gitHub": "GitHub",
+    "visitSite" : "Visit Site",
+    "repository" : "Repository",
+    "phone": "+54 9 11 36005401",
+    "mail": "seba.coppola@hotmail.com",
+    "goToGitHub": "Visit Git Hub",
+    "diplomaEnCurso": "Diploma in progress.",
+    "selectChip":"Select chip to view details."
+}
