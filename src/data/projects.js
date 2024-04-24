@@ -72,8 +72,8 @@ const projectsData = [
         gitHub: 'https://github.com/SebastianCoppola/budget-control', 
         title:'Budget Control - WebApp',
         description: {
-            en: 'Budget control SPA made in order to learn Vite bundler.',
-            es: 'Control de Presupuesto contruido como SPA para estudiar Vite.'
+            en: 'Budget control (SPA) builded in order to learn how to use Vite bundler.',
+            es: 'Control de presupuesto construido como SPA con el objetivo de estudiar Vite.'
         },
         stack: [stackIcons.react, stackIcons.vite, stackIcons.javascript],
     },
