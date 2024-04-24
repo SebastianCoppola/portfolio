@@ -4,6 +4,7 @@ import farazPrint from '../assets/projects/faraz-print.png'
 import porfolioPrint from '../assets/projects/portfolio-print.png'
 import sasPrint from '../assets/projects/sas-print.png'
 import microfrontendPrint from '../assets/projects/microfrontend-print.png'
+import budgetPrint from '../assets/projects/budget-print.png'
 //Icons:
 import stackIcons from './stackIcons'
 
@@ -64,6 +65,17 @@ const projectsData = [
             es: 'La actual SPA fue creada para compartir mi trabajo con la comunidad.'
         },
         stack: [stackIcons.react, stackIcons.mui, stackIcons.javascript],
+    },
+    { 
+        img: budgetPrint, 
+        url: 'https://budget-control-site.netlify.app/', 
+        gitHub: 'https://github.com/SebastianCoppola/budget-control', 
+        title:'Budget Control - WebApp',
+        description: {
+            en: 'Budget control SPA made in order to learn Vite bundler.',
+            es: 'Control de Presupuesto contruido como SPA para estudiar Vite.'
+        },
+        stack: [stackIcons.react, stackIcons.vite, stackIcons.javascript],
     },
 ]
 
