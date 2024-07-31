@@ -6,6 +6,8 @@ import lenguajeJava from '../assets/certificados/2023-lenguaje-java.jpg'
 import programacionFuncional from '../assets/certificados/2023-programacion-funciona-java.jpg'
 import reactNode from '../assets/certificados/2023-react-node.png'
 import spring from '../assets/certificados/2023-spring-springboot.jpg'
+import microfrontend from '../assets/certificados/2024-microfrontend.png'
+import react from '../assets/certificados/2024-react.png'
 
 const cursosData = [
     {
@@ -24,7 +26,7 @@ const cursosData = [
     },
     {
         id: 21, 
-        img: null,
+        img: microfrontend,
         academy: 'Udemy', 
         year: '2023',
         title: {
@@ -38,7 +40,7 @@ const cursosData = [
     },
     {
         id: 22, 
-        img: null,
+        img: react,
         academy: 'Udemy', 
         year: '2023',
         title: {

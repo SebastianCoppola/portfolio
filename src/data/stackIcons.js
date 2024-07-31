@@ -7,7 +7,7 @@ import { TbBrandNextjs } from "react-icons/tb"
 
 const stackIcons = {
     node: {icon: FaNodeJs, title: 'NodeJs'},
-    java: {icon: FaJava, title: 'JavaNodeJs'},
+    java: {icon: FaJava, title: 'JavaJs'},
     react: {icon: FaReact, title: 'ReactJs'},
     spring: {icon: BiLogoSpringBoot, title: 'Spring'},
     javascript: {icon: RiJavascriptFill, title: 'Javascript'},

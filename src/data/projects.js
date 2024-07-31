@@ -5,6 +5,7 @@ import porfolioPrint from '../assets/projects/portfolio-print.png'
 import sasPrint from '../assets/projects/sas-print.png'
 import microfrontendPrint from '../assets/projects/microfrontend-print.png'
 import budgetPrint from '../assets/projects/budget-print.png'
+import gesellSeguridad from '../assets/projects/gesell-seguridad.jpg'
 //Icons:
 import stackIcons from './stackIcons'
 
@@ -20,7 +21,18 @@ const projectsData = [
         },
         stack: [stackIcons.node, stackIcons.react, stackIcons.mongo, stackIcons.mui],
         color: 'red', 
-        number: 1 
+    },
+    { 
+        img: gesellSeguridad, 
+        url:'https://www.gesellseguridad.com.ar/', 
+        gitHub:null, 
+        title:'Gesell Seguridad - WebApp',
+        description: {
+            en: 'A large static webapp for the security company Gesell Seguridad.',
+            es: 'Página web estática para la empresa Gesell Seguridad.'
+        },
+        stack: [stackIcons.react, stackIcons.mui, stackIcons.javascript],
+        color: 'red', 
     },
     { 
         img: farazPrint, 
