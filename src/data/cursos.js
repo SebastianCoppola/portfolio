@@ -11,7 +11,7 @@ import react from '../assets/certificados/2024-react.png'
 
 const cursosData = [
     {
-        id: 20, 
+        id: 19, 
         img: null,
         academy: 'Ayi Academy', 
         year: '2023',
@@ -22,6 +22,20 @@ const cursosData = [
         description: {
             es: 'En el 2023 rendí con éxito un examen de nivel C2 para validar mis conocimientos en Inglés. Los mismos son producto de mis estudios, así como de un año viviendo en Nueva Zelanda. Esto me permitió, entre muchas otras cosas, trabajar 5 años como docente de inglés en un colegio bilingüe.',
             en: 'In 2023, I successfully passed a C2 level exam to validate my English proficiency. These skills are a result of my studies as well as one year living in New Zealand. This experience allowed me, among many other things, to work for 5 years as an English teacher in a bilingual school.'
+        },
+    },
+    {
+        id: 20, 
+        img: null,
+        academy: 'UTN', 
+        year: '2024',
+        title: {
+            es: 'Associte Degree in IT',
+            en: 'Tecnicatura en IT',
+        }, 
+        description: {
+            es: 'In 2024, I enrolled in the National Technological University to expand my foundational knowledge in information technology.',
+            en: 'En el 2024 ingresé a la Universidad Tecnológica Nacional para ampliar mis conocimientos de base en tecnologías de la información.'
         },
     },
     {

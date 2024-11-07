@@ -26,44 +26,69 @@ const CursoDetail = ({ curso }) => {
                         overflow:'hidden'
                     }}
                 >
-                    <Grid item xs={12} md={4}>
-                        <Grid container gap={1} sx={{padding:'20px 17px'}}>
-                            <Grid item xs={12}>
-                                <Typography sx={{fontSize:'1.3em', fontWeight:700}}>
-                                    {curso.title[lang]}
-                                </Typography>
+                    {curso.img ? (
+                        <>
+                            <Grid item xs={12} md={4}>
+                                <Grid container gap={1} sx={{padding:'20px 17px'}}>
+                                    <Grid item xs={12}>
+                                        <Typography sx={{fontSize:'1.3em', fontWeight:700}}>
+                                            {curso.title[lang]}
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography sx={{fontSize:'1em', color:'orange', fontWeight:700}}>
+                                            {curso.year} - {curso.academy}
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <Typography sx={{fontSize:'.9em', marginTop:'10px', textAlign:'justify'}}>
+                                            {curso.description[lang]}
+                                        </Typography>
+                                    </Grid>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={12}>
-                                <Typography sx={{fontSize:'1em', color:'orange', fontWeight:700}}>
-                                    {curso.year} - {curso.academy}
-                                </Typography>
+                            <Grid item xs={12} md={8} container sx={{margin:0, padding:0}}>
+                                {curso.img ?
+                                    <img 
+                                        src={curso.img} 
+                                        alt='certificado' 
+                                        style={{
+                                            width:'100%', 
+                                            height:'100%', 
+                                        }}
+                                    />
+                                :
+                                    <Grid container alignItems='center' justifyContent='center' sx={{height:'300px', backgroundColor:'grey'}}>
+                                        <Typography sx={{fontSize:'.8em', color:'white'}}>
+                                            {t('diplomaEnCurso')}
+                                        </Typography>
+                                    </Grid>
+                                }
                             </Grid>
-                            <Grid item xs={12}>
-                                <Typography sx={{fontSize:'.9em', marginTop:'10px', textAlign:'justify'}}>
-                                    {curso.description[lang]}
-                                </Typography>
+                        </>
+                    ) : (
+                        <Grid item xs={12} md={12} sx={{margin:'20px'}}>
+                            <Grid container gap={1} sx={{padding:'20px 17px'}}>
+                                <Grid item xs={12}>
+                                    <Typography sx={{fontSize:'1.3em', fontWeight:700}}>
+                                        {curso.title[lang]}
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography sx={{fontSize:'1em', color:'orange', fontWeight:700}}>
+                                        {curso.year} - {curso.academy}
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography sx={{fontSize:'.9em', marginTop:'10px', textAlign:'justify'}}>
+                                        {curso.description[lang]}
+                                    </Typography>
+                                </Grid>
                             </Grid>
                         </Grid>
-                    </Grid>
-                    <Grid item xs={12} md={8} container sx={{margin:0, padding:0}}>
-                        {curso.img ?
-                            <img 
-                                src={curso.img} 
-                                alt='certificado' 
-                                style={{
-                                    width:'100%', 
-                                    height:'100%', 
-                                }}
-                            />
-                        :
-                            <Grid container alignItems='center' justifyContent='center' sx={{height:'300px', backgroundColor:'grey'}}>
-                                <Typography sx={{fontSize:'.8em', color:'white'}}>
-                                    {t('diplomaEnCurso')}
-                                </Typography>
-                            </Grid>
-                        }
-                    </Grid>
+                    )}
                 </Grid>
+                    
             }
 
 

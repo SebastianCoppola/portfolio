@@ -34,7 +34,11 @@ const AboutMe = () => {
                     {t("sebastianCoppola")}
                 </Typography>
                 <Typography fontSize={15} style={{textAlign:'justify', marginTop:'10px'}}>
-                    {t("bio")}
+                    {t("bio1")}
+                    <br/>
+                    {t("bio2")}
+                    <br/>
+                    {t("bio3")}
                 </Typography>
                 <Grid container style={{marginTop:'20px'}}>
                     <Stack />
