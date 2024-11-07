@@ -35,9 +35,11 @@ const AboutMe = () => {
                 </Typography>
                 <Typography fontSize={15} style={{textAlign:'justify', marginTop:'10px'}}>
                     {t("bio1")}
-                    <br/>
+                </Typography>
+                <Typography fontSize={15} style={{textAlign:'justify', marginTop:'10px'}}>
                     {t("bio2")}
-                    <br/>
+                </Typography>
+                <Typography fontSize={15} style={{textAlign:'justify', marginTop:'10px'}}>
                     {t("bio3")}
                 </Typography>
                 <Grid container style={{marginTop:'20px'}}>
